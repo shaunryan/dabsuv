@@ -1,0 +1,41 @@
+# The main job for manisha.
+resources:
+  jobs:
+    manisha_job:
+      name: manisha_job
+
+      trigger:
+        # Run this job every day, exactly one day from the last run; see https://docs.databricks.com/api/workspace/jobs/create#trigger
+        periodic:
+          interval: 1
+          unit: DAYS
+
+      #email_notifications:
+      #  on_failure:
+      #    - your_email@example.com
+
+      tasks:
+
+        - task_key: get_taxis
+          existing_cluster_id: 0317-110841-x2mt4zty
+          python_wheel_task:
+            package_name: manisha
+            entry_point: get_taxis
+          libraries:
+            # By default we just include the .whl file generated for the manisha package.
+            # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
+            # for more information on how to add other libraries.
+            - whl: ../dist/*.whl
+
+        - task_key: get_taxi_count
+          existing_cluster_id: 0317-110841-x2mt4zty
+          depends_on:
+            - task_key: get_taxis
+          python_wheel_task:
+            package_name: manisha
+            entry_point: get_taxi_count
+          libraries:
+            # By default we just include the .whl file generated for the manisha package.
+            # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
+            # for more information on how to add other libraries.
+            - whl: ../dist/*.whl

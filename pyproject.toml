@@ -1,0 +1,24 @@
+[project]
+name = "manisha"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shaun Ryan", email = "shaun_chiburi@hotmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+get_taxis = "manisha.taxi:get_taxis"
+get_taxi_count = "manisha.taxi:get_taxi_count"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "databricks-connect>=17.0.0",
+    "pytest>=8.4.1",
+]
