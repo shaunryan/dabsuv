@@ -22,14 +22,14 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://adb-8723178682651460.0.azuredatabricks.net
+      host: https://adb-000000000000000.0.azuredatabricks.net
 
   prod:
     mode: production
     workspace:
-      host: https://adb-8723178682651460.0.azuredatabricks.net
+      host: https://adb-000000000000000.0.azuredatabricks.net
       # We explicitly deploy to /Workspace/Users/shaun.ryan@shaunchiburihotmail.onmicrosoft.com to make sure we only have a single copy.
-      root_path: /Workspace/Users/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/shaun.ryan@mail.com/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: shaun.ryan@shaunchiburihotmail.onmicrosoft.com
+      - user_name: shaun.ryan@mail.com
         level: CAN_MANAGE
