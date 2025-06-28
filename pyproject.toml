@@ -10,8 +10,8 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-get_taxis = "dabsuv.taxi:get_taxis"
-get_taxi_count = "dabsuv.taxi:get_taxi_count"
+get_taxis = "dabsuv.entry_points:get_taxis"
+get_taxi_count = "dabsuv.entry_points:get_taxi_count"
 
 [build-system]
 requires = ["hatchling"]
