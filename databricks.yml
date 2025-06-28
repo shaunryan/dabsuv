@@ -28,7 +28,7 @@ targets:
     mode: production
     workspace:
       host: https://adb-000000000000000.0.azuredatabricks.net
-      # We explicitly deploy to /Workspace/Users/shaun.ryan@shaunchiburihotmail.onmicrosoft.com to make sure we only have a single copy.
+      # We explicitly deploy to /Workspace/Users/shaun.ryan@mail.com to make sure we only have a single copy.
       root_path: /Workspace/Users/shaun.ryan@mail.com/.bundle/${bundle.name}/${bundle.target}
     permissions:
       - user_name: shaun.ryan@mail.com
