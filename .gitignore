@@ -7,3 +7,4 @@ __pycache__/
 scratch/**
 !scratch/README.md
 .databricks.env
+.DS_Store
