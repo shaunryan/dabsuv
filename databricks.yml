@@ -2,7 +2,7 @@
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 bundle:
   name: dabsuv
-  uuid: a4bdd560-ab63-48c5-8235-7d9e0fa28856
+  uuid: 5f93c13f-d692-4973-83d9-73e487d4593b
 
 artifacts:
   default:
@@ -22,14 +22,14 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://adb-000000000000000.0.azuredatabricks.net
+      host: https://adb-8723178682651460.0.azuredatabricks.net
 
   prod:
     mode: production
     workspace:
-      host: https://adb-000000000000000.0.azuredatabricks.net
-      # We explicitly deploy to /Workspace/Users/shaun.ryan@mail.com to make sure we only have a single copy.
-      root_path: /Workspace/Users/shaun.ryan@mail.com/.bundle/${bundle.name}/${bundle.target}
+      host: https://adb-8723178682651460.0.azuredatabricks.net
+      # We explicitly deploy to /Workspace/Users/shaun.ryan@shaunchiburihotmail.onmicrosoft.com to make sure we only have a single copy.
+      root_path: /Workspace/Users/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: shaun.ryan@mail.com
+      - user_name: shaun.ryan@shaunchiburihotmail.onmicrosoft.com
         level: CAN_MANAGE
