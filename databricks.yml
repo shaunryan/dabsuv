@@ -28,7 +28,7 @@ targets:
     mode: production
     workspace:
       host: https://adb-8723178682651460.0.azuredatabricks.net
-      root_path: /Workspace/workflows/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/workflows/${bundle.name}/${bundle.target}
     permissions:
       - group_name: admin
         level: CAN_MANAGE
