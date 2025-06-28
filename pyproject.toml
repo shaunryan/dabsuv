@@ -1,5 +1,5 @@
 [project]
-name = "manisha"
+name = "dabsuv"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -10,8 +10,8 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-get_taxis = "manisha.taxi:get_taxis"
-get_taxi_count = "manisha.taxi:get_taxi_count"
+get_taxis = "dabsuv.taxi:get_taxis"
+get_taxi_count = "dabsuv.taxi:get_taxi_count"
 
 [build-system]
 requires = ["hatchling"]

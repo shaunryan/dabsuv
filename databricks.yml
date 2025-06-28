@@ -1,7 +1,7 @@
-# This is a Databricks asset bundle definition for manisha.
+# This is a Databricks asset bundle definition for dabsuv.
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 bundle:
-  name: manisha
+  name: dabsuv
   uuid: a4bdd560-ab63-48c5-8235-7d9e0fa28856
 
 artifacts:
