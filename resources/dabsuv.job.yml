@@ -21,6 +21,8 @@ resources:
           python_wheel_task:
             package_name: dabsuv
             entry_point: get_taxis
+            named_parameters:
+              test: test
           libraries:
             # By default we just include the .whl file generated for the dabsuv package.
             # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
@@ -34,6 +36,8 @@ resources:
           python_wheel_task:
             package_name: dabsuv
             entry_point: get_taxi_count
+            named_parameters:
+              test: test
           libraries:
             # By default we just include the .whl file generated for the dabsuv package.
             # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
